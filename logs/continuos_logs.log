@@ -22,3 +22,92 @@ AttributeError: 'Logger' object has no attribute 'ibfo'
 [2025-08-02 11:34:02,067: INFO: common: created directory at: artifacts/data_ingestion]
 [2025-08-02 11:34:07,283: INFO: data_ingestion: file is downloaded]
 [2025-08-02 11:34:07,696: INFO: main: Stage  Data Ingestion stage completed]
+[2025-08-02 12:00:01,428: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-02 12:00:01,447: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-02 12:00:01,452: INFO: common: created directory at: artifacts_root]
+[2025-08-02 12:00:01,452: INFO: common: created directory at: artifacts/data_transformation]
+[2025-08-02 12:01:04,794: INFO: main: stage  Data Ingestion stage initiated]
+[2025-08-02 12:01:04,799: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-02 12:01:04,803: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-02 12:01:04,803: INFO: common: created directory at: artifacts_root]
+[2025-08-02 12:01:04,803: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-08-02 12:01:08,794: INFO: data_ingestion: file is downloaded]
+[2025-08-02 12:01:09,460: INFO: main: Stage  Data Ingestion stage completed]
+[2025-08-02 12:01:14,297: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-02 12:01:14,304: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-02 12:01:14,304: INFO: common: created directory at: artifacts_root]
+[2025-08-02 12:01:14,304: INFO: common: created directory at: artifacts/data_transformation]
+[2025-08-02 12:01:50,800: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-02 12:01:50,800: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-02 12:01:50,800: INFO: common: created directory at: artifacts_root]
+[2025-08-02 12:01:50,800: INFO: common: created directory at: artifacts/data_transformation]
+[2025-08-02 12:02:31,351: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-02 12:02:31,351: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-02 12:02:31,359: INFO: common: created directory at: artifacts_root]
+[2025-08-02 12:02:31,361: INFO: common: created directory at: artifacts/data_transformation]
+[2025-08-02 13:04:18,237: INFO: main: stage  Data Ingestion stage initiated]
+[2025-08-02 13:04:18,245: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-02 13:04:18,245: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-02 13:04:18,245: INFO: common: created directory at: artifacts_root]
+[2025-08-02 13:04:18,253: ERROR: main: 'ConfigurationManager' object has no attribute 'get_data_ingestion_config']
+Traceback (most recent call last):
+  File "C:\Users\wakea\Desktop\UdemyMlops\TextSummarizer\main.py", line 10, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "C:\Users\wakea\Desktop\UdemyMlops\TextSummarizer\src\textSummarizer\pipeline\stage_1_data_ingestion_pipeline.py", line 11, in initiate_data_ingestion
+    data_ingestion_config=config.get_data_ingestion_config()
+AttributeError: 'ConfigurationManager' object has no attribute 'get_data_ingestion_config'
+[2025-08-02 13:06:17,918: INFO: main: stage  Data Ingestion stage initiated]
+[2025-08-02 13:06:17,918: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-02 13:06:17,918: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-02 13:06:17,918: INFO: common: created directory at: artifacts_root]
+[2025-08-02 13:06:17,918: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-08-02 13:06:17,918: INFO: data_ingestion: file already exists]
+[2025-08-02 13:06:18,005: ERROR: main: [Errno 22] Invalid argument: 'artifacts\\data_ingestion\\samsum_dataset\\test\\data-00000-of-00001.arrow']
+Traceback (most recent call last):
+  File "C:\Users\wakea\Desktop\UdemyMlops\TextSummarizer\main.py", line 10, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "C:\Users\wakea\Desktop\UdemyMlops\TextSummarizer\src\textSummarizer\pipeline\stage_1_data_ingestion_pipeline.py", line 15, in initiate_data_ingestion
+    data_ingestion.extract_zip_file()
+  File "C:\Users\wakea\Desktop\UdemyMlops\TextSummarizer\src\textSummarizer\components\data_ingestion.py", line 32, in extract_zip_file
+    zip_ref.extractall(unzip_path)
+  File "C:\Users\wakea\Desktop\UdemyMlops\TextSummarizer\nlpvenv\lib\zipfile.py", line 1660, in extractall
+    self._extract_member(zipinfo, path, pwd)
+  File "C:\Users\wakea\Desktop\UdemyMlops\TextSummarizer\nlpvenv\lib\zipfile.py", line 1714, in _extract_member
+    open(targetpath, "wb") as target:
+OSError: [Errno 22] Invalid argument: 'artifacts\\data_ingestion\\samsum_dataset\\test\\data-00000-of-00001.arrow'
+[2025-08-02 13:10:10,570: INFO: main: stage  Data Ingestion stage initiated]
+[2025-08-02 13:10:10,570: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-02 13:10:10,570: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-02 13:10:10,570: INFO: common: created directory at: artifacts_root]
+[2025-08-02 13:10:10,584: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-08-02 13:10:10,584: INFO: data_ingestion: file already exists]
+[2025-08-02 13:10:10,649: ERROR: data_ingestion: Failed to unzip: [Errno 22] Invalid argument: 'artifacts/data_ingestion\\samsum_dataset\\test\\data-00000-of-00001.arrow']
+[2025-08-02 13:10:10,649: ERROR: main: [Errno 22] Invalid argument: 'artifacts/data_ingestion\\samsum_dataset\\test\\data-00000-of-00001.arrow']
+Traceback (most recent call last):
+  File "C:\Users\wakea\Desktop\UdemyMlops\TextSummarizer\main.py", line 10, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "C:\Users\wakea\Desktop\UdemyMlops\TextSummarizer\src\textSummarizer\pipeline\stage_1_data_ingestion_pipeline.py", line 15, in initiate_data_ingestion
+    data_ingestion.extract_zip_file()
+  File "C:\Users\wakea\Desktop\UdemyMlops\TextSummarizer\src\textSummarizer\components\data_ingestion.py", line 32, in extract_zip_file
+    raise e
+  File "C:\Users\wakea\Desktop\UdemyMlops\TextSummarizer\src\textSummarizer\components\data_ingestion.py", line 28, in extract_zip_file
+    shutil.unpack_archive(self.config.local_data_file, unzip_path)
+  File "C:\Users\wakea\Desktop\UdemyMlops\TextSummarizer\nlpvenv\lib\shutil.py", line 1314, in unpack_archive
+    func(filename, extract_dir, **kwargs)
+  File "C:\Users\wakea\Desktop\UdemyMlops\TextSummarizer\nlpvenv\lib\shutil.py", line 1220, in _unpack_zipfile
+    open(targetpath, 'wb') as target:
+OSError: [Errno 22] Invalid argument: 'artifacts/data_ingestion\\samsum_dataset\\test\\data-00000-of-00001.arrow'
+[2025-08-02 13:12:04,549: INFO: main: stage  Data Ingestion stage initiated]
+[2025-08-02 13:12:04,549: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-02 13:12:04,549: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-02 13:12:04,549: INFO: common: created directory at: artifacts_root]
+[2025-08-02 13:12:04,549: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-08-02 13:12:13,182: INFO: data_ingestion: file is downloaded]
+[2025-08-02 13:12:13,456: INFO: data_ingestion: Unzipped dataset to: artifacts/data_ingestion]
+[2025-08-02 13:12:13,457: INFO: main: Stage  Data Ingestion stage completed]
+[2025-08-02 13:12:13,457: INFO: main: stage  Data Transformation stage initiated]
+[2025-08-02 13:12:13,457: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-02 13:12:13,457: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-02 13:12:13,457: INFO: common: created directory at: artifacts_root]
+[2025-08-02 13:12:13,457: INFO: common: created directory at: artifacts/data_transformation]
+[2025-08-02 13:12:23,755: INFO: main: Stage  Data Transformation stage completed]
