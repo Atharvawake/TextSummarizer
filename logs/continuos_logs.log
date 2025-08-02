@@ -1,0 +1,24 @@
+[2025-08-02 11:15:06,061: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-02 11:15:06,076: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-02 11:16:11,869: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-02 11:16:11,897: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-02 11:16:11,899: INFO: common: created directory at: artifacts_root]
+[2025-08-02 11:16:11,908: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-08-02 11:16:17,145: INFO: 1670206789: file is downloaded]
+[2025-08-02 11:20:05,351: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-02 11:20:05,351: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-02 11:20:05,357: INFO: common: created directory at: artifacts_root]
+[2025-08-02 11:20:05,360: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-08-02 11:20:05,362: INFO: 134072044: file already exists]
+[2025-08-02 11:33:42,651: ERROR: main: 'Logger' object has no attribute 'ibfo']
+Traceback (most recent call last):
+  File "C:\Users\wakea\Desktop\UdemyMlops\TextSummarizer\main.py", line 7, in <module>
+    logger.ibfo(f"stage {STAGE_NAME} initiated")
+AttributeError: 'Logger' object has no attribute 'ibfo'
+[2025-08-02 11:34:02,055: INFO: main: stage  Data Ingestion stage initiated]
+[2025-08-02 11:34:02,055: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-02 11:34:02,064: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-02 11:34:02,066: INFO: common: created directory at: artifacts_root]
+[2025-08-02 11:34:02,067: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-08-02 11:34:07,283: INFO: data_ingestion: file is downloaded]
+[2025-08-02 11:34:07,696: INFO: main: Stage  Data Ingestion stage completed]
